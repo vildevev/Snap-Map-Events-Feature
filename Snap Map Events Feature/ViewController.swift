@@ -23,7 +23,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        if let location = manager.location?.coordinate {
+            let center = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            self.map.setRegion(region, animated: true)
+            self.map.removeAnnotations(self.map.annotations) 
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = center
+            annotation.title = "Your Location"
+            self.map.addAnnotation(annotation)
+        }
     }
 
     override func didReceiveMemoryWarning() {

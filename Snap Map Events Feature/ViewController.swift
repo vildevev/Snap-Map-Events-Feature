@@ -22,14 +22,20 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        let uilpgr = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longpress(gestureRecognizer:))) 
+        let uilpgr = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longpress(gestureRecognizer:)))
         uilpgr.minimumPressDuration = 2
         map.addGestureRecognizer(uilpgr)
     }
     
     func longpress(gestureRecognizer: UIGestureRecognizer) {
         
-        print("long press")
+        let touchPoint = gestureRecognizer.location(in: self.map)
+        let newCoordinate = self.map.convert(touchPoint, toCoordinateFrom: self.map)
+        print(newCoordinate)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = newCoordinate
+        annotation.title = "Temp Title"
+        self.map.addAnnotation(annotation)
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = manager.location?.coordinate {

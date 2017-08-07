@@ -9,7 +9,6 @@
 import UIKit
 import MapKit
 
-var events = [Dictionary<String, String>()]
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
@@ -17,7 +16,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet var map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        map.delegate = self
+        map.showsUserLocation = true
         if events.count == 1 && events[0].count == 0 {
             events.remove(at: 0)
             events.append(["name": "Lady Gaga at AT&T Park", "lat": "37.77860146512109", "lon": "-122.38928318023682"])
@@ -59,23 +59,48 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             
         }
     }
+    var currentLocation:CLLocationCoordinate2D?
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = manager.location?.coordinate {
             let center = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+            self.currentLocation = center 
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
             self.map.setRegion(region, animated: true)
-            self.map.removeAnnotations(self.map.annotations)
+//            self.map.removeAnnotations(self.map.annotations)
             
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = center
-            annotation.title = "Your Location"
-            self.map.addAnnotation(annotation)
+//            let annotation = MKPointAnnotation()
+//            annotation.coordinate = center
+//            annotation.title = "Your Location"
+//            self.map.addAnnotation(annotation)
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        print("Number of Annotations == \(mapView.annotations.count)")
+        print("Type of annotation == \(type(of: annotation))")
+        if annotation.isKind(of: MKUserLocation.self) {
+            let pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: "Your Location")
+            
+            //resize image
+            let image = UIImage(named: "Avatar")!
+            let size = CGSize(width: 21.5, height: 51.9)
+            UIGraphicsBeginImageContext(size)
+            image.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+            let resizedImage  = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            pinView.image = resizedImage
+            return pinView
+        } else if annotation.isKind(of: EventAnnotationView.self) {
+            
+        }
+        return nil
     }
 
 

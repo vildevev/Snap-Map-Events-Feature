@@ -30,7 +30,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                                 let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                                 let region = MKCoordinateRegion(center: coordinate, span: span)
                                 self.map.setRegion(region, animated: true)
-                                let annotation = MKPointAnnotation()
+                                let annotationForEvent = MKPointAnnotation()
                             }
                         }
                     }

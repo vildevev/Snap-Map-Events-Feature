@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E0E8F731F392C5100931508 /* EventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0E8F721F392C5100931508 /* EventAnnotationView.swift */; };
+		2E0E8F751F392ED100931508 /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0E8F741F392ED100931508 /* EventAnnotation.swift */; };
 		2E1E526C1F37FF22007CD7A5 /* Concert.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E526B1F37FF22007CD7A5 /* Concert.png */; };
 		2E2EFE611F367C3F004E2531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EFE601F367C3F004E2531 /* AppDelegate.swift */; };
 		2E2EFE631F367C3F004E2531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EFE621F367C3F004E2531 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		2E0E8F721F392C5100931508 /* EventAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnnotationView.swift; sourceTree = "<group>"; };
+		2E0E8F741F392ED100931508 /* EventAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
 		2E1E526B1F37FF22007CD7A5 /* Concert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Concert.png; path = ../../../Concert.png; sourceTree = "<group>"; };
 		2E2EFE5D1F367C3F004E2531 /* Snap Map Events Feature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap Map Events Feature.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2EFE601F367C3F004E2531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				2E2EFE691F367C3F004E2531 /* LaunchScreen.storyboard */,
 				2E2EFE6C1F367C3F004E2531 /* Info.plist */,
 				2E0E8F721F392C5100931508 /* EventAnnotationView.swift */,
+				2E0E8F741F392ED100931508 /* EventAnnotation.swift */,
 			);
 			path = "Snap Map Events Feature";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E0E8F731F392C5100931508 /* EventAnnotationView.swift in Sources */,
+				2E0E8F751F392ED100931508 /* EventAnnotation.swift in Sources */,
 				2E2EFE631F367C3F004E2531 /* ViewController.swift in Sources */,
 				2E2EFE611F367C3F004E2531 /* AppDelegate.swift in Sources */,
 			);

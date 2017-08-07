@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class EventAnnotationView: MKAnnotationView {
 
@@ -17,5 +18,13 @@ class EventAnnotationView: MKAnnotationView {
         // Drawing code
     }
     */
+    
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
 }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4eG-5G-Udd">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,5 +42,101 @@
             </objects>
             <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KKt-0L-bdG">
+            <objects>
+                <viewController id="4eG-5G-Udd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D7m-kB-kfw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ddg-7F-fDy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="5OD-ca-tI8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lady Gaga Joanne World Tour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gga-3m-kcE">
+                                <rect key="frame" x="29" y="28" width="245" height="18.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="AT &amp; T Park, San Francisco, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC9-hI-qok">
+                                <rect key="frame" x="17" y="243" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sun 8/13 @ 7pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHq-hl-l0r">
+                                <rect key="frame" x="81" y="281" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPd-nz-oge">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="More info" id="OPh-fA-3d1"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="A9i-mO-meS"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="exa-qq-XXc"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="79Y-em-Gil"/>
+                                    <barButtonItem title="Buy Tickets" id="x6P-kb-oOe"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2017-08-07 at 20.42.45" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-az-2i0">
+                                <rect key="frame" x="29" y="54" width="245" height="167"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="IMG_3263" translatesAutoresizingMaskIntoConstraints="NO" id="EF9-PR-7HI">
+                                <rect key="frame" x="11" y="358" width="298" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IMG_3264" translatesAutoresizingMaskIntoConstraints="NO" id="EoZ-O4-gHd">
+                                <rect key="frame" x="13" y="440" width="295" height="74"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Friends that are going:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jas-xh-QqJ">
+                                <rect key="frame" x="14" y="329" width="292" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EF9-PR-7HI" firstAttribute="top" secondItem="Jas-xh-QqJ" secondAttribute="bottom" constant="8.5" id="1va-NX-bB5"/>
+                            <constraint firstItem="EoZ-O4-gHd" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leading" constant="13" id="20B-UE-bwf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eC9-hI-qok" secondAttribute="trailing" constant="7" id="27M-Tq-T2g"/>
+                            <constraint firstItem="pyW-az-2i0" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="13" id="2Nf-nj-S1D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pyW-az-2i0" secondAttribute="trailing" constant="30" id="4pC-Fq-Qmn"/>
+                            <constraint firstAttribute="trailing" secondItem="EoZ-O4-gHd" secondAttribute="trailing" constant="12" id="9d5-qm-nKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Jas-xh-QqJ" secondAttribute="trailing" constant="15" id="9xM-EM-kLB"/>
+                            <constraint firstItem="EF9-PR-7HI" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leading" constant="10" id="Fnt-LK-st2"/>
+                            <constraint firstItem="EoZ-O4-gHd" firstAttribute="top" secondItem="EF9-PR-7HI" secondAttribute="bottom" constant="8" id="Glu-vo-xoi"/>
+                            <constraint firstAttribute="trailing" secondItem="EF9-PR-7HI" secondAttribute="trailing" constant="12" id="Lj3-TJ-sDR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uHq-hl-l0r" secondAttribute="trailing" constant="64" id="U6q-Wv-kAc"/>
+                            <constraint firstItem="uHq-hl-l0r" firstAttribute="top" secondItem="eC9-hI-qok" secondAttribute="bottom" constant="17" id="UP8-cq-rub"/>
+                            <constraint firstItem="Jas-xh-QqJ" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leading" constant="17" id="WiE-Sh-wYV"/>
+                            <constraint firstItem="Jas-xh-QqJ" firstAttribute="top" secondItem="uHq-hl-l0r" secondAttribute="bottom" constant="8" id="XSg-Zq-9Y1"/>
+                            <constraint firstItem="pyW-az-2i0" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="13" id="ZSn-QG-ZOM"/>
+                            <constraint firstItem="pyW-az-2i0" firstAttribute="top" secondItem="gga-3m-kcE" secondAttribute="bottom" constant="25.5" id="bd6-gd-NL8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eC9-hI-qok" secondAttribute="trailing" constant="7" id="bmi-sq-W4z"/>
+                            <constraint firstItem="uHq-hl-l0r" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="65" id="fUv-9p-W8b"/>
+                            <constraint firstItem="gga-3m-kcE" firstAttribute="top" secondItem="D7m-kB-kfw" secondAttribute="bottom" constant="8" id="hyo-aw-sC3"/>
+                            <constraint firstItem="rPd-nz-oge" firstAttribute="top" secondItem="EoZ-O4-gHd" secondAttribute="bottom" constant="29" id="iZK-hO-Y06"/>
+                            <constraint firstItem="eC9-hI-qok" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="4" id="jej-Ez-jDy"/>
+                            <constraint firstItem="Jas-xh-QqJ" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leading" constant="13" id="kWY-pO-pK8"/>
+                            <constraint firstItem="eC9-hI-qok" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="1" id="mgA-i5-Qys"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eC9-hI-qok" secondAttribute="trailing" constant="4" id="mlb-dS-KLg"/>
+                            <constraint firstItem="gga-3m-kcE" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="13" id="pbz-eE-GNq"/>
+                            <constraint firstItem="eC9-hI-qok" firstAttribute="leading" secondItem="5OD-ca-tI8" secondAttribute="leadingMargin" constant="1" id="sTx-eM-hxM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eo7-SG-UdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.5" y="140.49295774647888"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="IMG_3263" width="655" height="155"/>
+        <image name="IMG_3264" width="653" height="151"/>
+        <image name="Screen Shot 2017-08-07 at 20.42.45" width="305" height="222"/>
+    </resources>
 </document>

@@ -86,7 +86,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             
             //resize image
             let image = UIImage(named: "Avatar")!
-            let size = CGSize(width: 21.5, height: 51.9)
+            let size = CGSize(width: 31.3, height: 73.4)
             UIGraphicsBeginImageContext(size)
             image.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
             let resizedImage  = UIGraphicsGetImageFromCurrentImageContext()

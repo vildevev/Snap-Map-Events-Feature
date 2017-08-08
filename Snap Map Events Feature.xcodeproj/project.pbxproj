@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E0E8F731F392C5100931508 /* EventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0E8F721F392C5100931508 /* EventAnnotationView.swift */; };
 		2E0E8F751F392ED100931508 /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0E8F741F392ED100931508 /* EventAnnotation.swift */; };
+		2E0E8F771F396ADE00931508 /* Screen Shot 2017-08-07 at 20.42.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0E8F761F396ADE00931508 /* Screen Shot 2017-08-07 at 20.42.45.png */; };
 		2E1E526C1F37FF22007CD7A5 /* Concert.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E526B1F37FF22007CD7A5 /* Concert.png */; };
 		2E2EFE611F367C3F004E2531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EFE601F367C3F004E2531 /* AppDelegate.swift */; };
 		2E2EFE631F367C3F004E2531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EFE621F367C3F004E2531 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		2E0E8F721F392C5100931508 /* EventAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnnotationView.swift; sourceTree = "<group>"; };
 		2E0E8F741F392ED100931508 /* EventAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
+		2E0E8F761F396ADE00931508 /* Screen Shot 2017-08-07 at 20.42.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2017-08-07 at 20.42.45.png"; path = "../../../Screen Shot 2017-08-07 at 20.42.45.png"; sourceTree = "<group>"; };
 		2E1E526B1F37FF22007CD7A5 /* Concert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Concert.png; path = ../../../Concert.png; sourceTree = "<group>"; };
 		2E2EFE5D1F367C3F004E2531 /* Snap Map Events Feature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap Map Events Feature.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2EFE601F367C3F004E2531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				2E2EFE621F367C3F004E2531 /* ViewController.swift */,
 				2EFA10D01F380F8900EA67BE /* Mockup.png */,
 				2EFA10CE1F380F4E00EA67BE /* imageedit_3_7920388907.png */,
+				2E0E8F761F396ADE00931508 /* Screen Shot 2017-08-07 at 20.42.45.png */,
 				2E1E526B1F37FF22007CD7A5 /* Concert.png */,
 				2E2EFE641F367C3F004E2531 /* Main.storyboard */,
 				2E2EFE671F367C3F004E2531 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0E8F771F396ADE00931508 /* Screen Shot 2017-08-07 at 20.42.45.png in Resources */,
 				2EFA10D11F380F8900EA67BE /* Mockup.png in Resources */,
 				2E2EFE6B1F367C3F004E2531 /* LaunchScreen.storyboard in Resources */,
 				2EFA10CF1F380F4E00EA67BE /* imageedit_3_7920388907.png in Resources */,
